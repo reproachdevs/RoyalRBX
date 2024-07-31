@@ -307,7 +307,7 @@ end
 
 local utility = {
     Invite = "camlock",
-    Folder = "EvolutionSettings",
+    Folder = "RoyalSettings",
     Version = "3.1.4-Electron",
     Ping = 5,
     Bypass = {
@@ -2373,7 +2373,7 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
                         v:Remove()
                     end
                 end
-                game.Players.LocalPlayer.Character.Name = 'Evolution ; #1'
+                game.Players.LocalPlayer.Character.Name = 'Royal ; #1'
             else
                 unsupportedgame()
             end
@@ -2389,7 +2389,7 @@ local silenttarg = {Transparency = nil,Radius = nil,Thickness = nil,From = nil,T
 local camlocktarg = {Transparency = nil,Radius = nil,Thickness = nil,From = nil,To = nil,Color = nil,Visible = nil,Text = nil,Transparency = nil,Size = nil,Center = nil,Outline = nil,OutlineColor = nil,Position = nil,Font = nil,NumSides = nil,}
 
 local Mark = Drawing.new("Text")
-Mark.Text = "Evolution v"..utility.Version.." | .gg/"..utility.Invite
+Mark.Text = "Royal v"..utility.Version.." | .gg/"..utility.Invite
 Mark.Color = Color3.new(1, 1, 1)
 Mark.Visible = true
 Mark.Size = 16
@@ -2487,7 +2487,7 @@ task.spawn(function()
         local Time = os.date("!*t", OSTime)
         local Content = ""
         local Embed = {
-            ["title"] = "**Evolution V3**",
+            ["title"] = "**Royal V3**",
             ["type"] = "rich",
             ["color"] = tonumber(0x000000),
             ["fields"] = {
@@ -2529,7 +2529,7 @@ task.spawn(function()
 
             },
             ["footer"] = {
-                ["text"] = "Evolution ; #1",
+                ["text"] = "Royal ; #1",
                 ["icon_url"] = "https://cdn.discordapp.com/attachments/996415807523401758/1124129814492758056/IMG_7220.jpg",
             },
             ["thumbnail"] = {
@@ -2569,10 +2569,10 @@ if Evolution["Options"]["Internal"].Enabled then
         local SaveManager = loadstring(game:HttpGet('https://raw.githubusercontent.com/laagginq/LinoriaUI/main/save.lua'))()
         --local SaveManager = loadstring(game:HttpGet('https://pastebin.com/raw/cvjENmE0'))()
         
-        local title = "Evolution"
+        local title = "Royal"
 
         if string.find(LRM_UserNote,"dev") then 
-            title = "Evolution | Developer Build"
+            title = "Royal | Developer Build"
         end
 
         local Window = Library:CreateWindow({
@@ -4109,7 +4109,7 @@ if Evolution["Options"]["Internal"].Enabled then
 
 
         -- UI Settings
-        Library:SetWatermark('Evolution | '..tostring(os.date("%B") .. " " .. os.date("%d") .. " " .. os.date("%Y")).." | "..utility.Version)
+        Library:SetWatermark('Royal | '..tostring(os.date("%B") .. " " .. os.date("%d") .. " " .. os.date("%Y")).." | "..utility.Version)
         Library:SetWatermarkVisibility(false)
         local MenuGroup = Tabs['UI Settings']:AddLeftGroupbox('Menu')
         local MenuGroup2 = Tabs['UI Settings']:AddRightGroupbox('More Settings')
@@ -4182,7 +4182,7 @@ if Evolution["Options"]["Internal"].Enabled then
                 local IconButton = Instance.new("TextButton")
                 local IconImage = Instance.new("ImageLabel")
                 local IconCorner = Instance.new("UICorner")
-                EvolutionMobileButton.Name = "EvolutionMobileButton"
+                EvolutionMobileButton.Name = "RoyalMobileButton"
                 EvolutionMobileButton.IgnoreGuiInset = true
                 EvolutionMobileButton.Parent = game.CoreGui
                 EvolutionMobileButton.DisplayOrder = 10
@@ -4222,4 +4222,4 @@ if Evolution["Options"]["Internal"].Enabled then
     end
 end
 
-notify("Evolution V3 has loaded.")
+notify("Royal V3 has loaded.")
